@@ -600,6 +600,7 @@ const parseOwnerAffiliations = (affiliations) => {
   // Set default value for ownerAffiliations.
   // NOTE: Done here since parseArray() will always return an empty array even nothing
   //was specified.
+  console.log("affiliations", affiliations);
   affiliations =
     affiliations && affiliations.length > 0
       ? affiliations.map((affiliation) => affiliation.toUpperCase())
